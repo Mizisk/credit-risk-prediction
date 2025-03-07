@@ -1,4 +1,9 @@
 import joblib
+from sklearn.linear_model import LogisticRegression
 
-# Sauvegarder le modèle entraîné
+# Entraînement du modèle
+model = LogisticRegression(max_iter=1000)
+model.fit(X_train, y_train)
+
+# Sauvegarder le modèle
 joblib.dump(model, 'model.joblib')
