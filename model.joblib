@@ -1,0 +1,4 @@
+import joblib
+
+# Sauvegarder le modèle entraîné
+joblib.dump(model, 'model.joblib')
